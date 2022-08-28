@@ -1,0 +1,129 @@
+.avatarDropdownContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 0.3rem;
+  position: relative;
+  img {
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 6px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border-style: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menuContainer {
+  background: rgb(226, 226, 226);
+  position: absolute;
+  top: 140%;
+  right: 20%;
+  z-index: 100;
+  width: 160px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 2px;
+  list-style: none;
+  background-clip: padding-box;
+  border: 1px solid #d0d7de8e;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+  flex-direction: column;
+  font-weight: 400;
+  color: #282c34;
+  &::before {
+    top: -16px;
+    right: 9px;
+    left: auto;
+    border: 8px solid transparent;
+    border-bottom-color: rgb(226, 226, 226);
+    position: absolute;
+    display: inline-block;
+    content: "";
+  }
+}
+
+.signedInUser {
+  font-size: 1rem;
+  padding: 4px 6px 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .userHandel {
+    font-weight: 600;
+  }
+}
+
+.dropdownDivider {
+  display: block;
+  height: 0;
+  margin: 4px 0;
+  border-top: 1px solid #d0d7de8e;
+}
+
+.menuLinksContainer {
+  align-items: center;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  gap: 0.25rem;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #282c34;
+  }
+}
+
+.signOutButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 600;
+  gap: 0.25rem;
+  &:hover {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    background: #282c34;
+    cursor: pointer;
+  }
+}
+
+.centerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

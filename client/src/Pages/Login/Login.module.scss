@@ -1,0 +1,91 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  a {
+    text-decoration: none;
+    color: #36a4ec;
+  }
+  overflow: hidden;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-weight: 500;
+  }
+  input {
+    min-width: 300px;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-size: 1rem;
+    margin: 0.75rem 0;
+    color: rgb(226, 226, 226);
+    border: thin solid rgba(0, 0, 0, 0.39) !important;
+    background: rgba(0, 0, 0, 0.24);
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    &::placeholder {
+      color: rgb(226, 226, 226);
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+    }
+    &:focus,
+    &:active,
+    &:focus-visible {
+      outline: none;
+      border: 1px solid #c9c9c9 !important;
+      transform: scale(0.99);
+      transition: transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235);
+    }
+  }
+
+  .loginButton {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    padding: 0.65rem 0;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background: #36a4ec;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+
+      transform: scale(1.015);
+    }
+    &:active {
+      transform: scale(0.97);
+      transition: transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235);
+    }
+  }
+
+  .socialButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    padding: 0.65rem 0;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3b3b3b;
+    background: #ebebeb;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}

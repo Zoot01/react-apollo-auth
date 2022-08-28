@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.spinnerSontainer {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  box-sizing: border-box;
+}
+
+.spinner {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border: 0.5rem solid #00000044;
+  border-top: 0.5rem solid #36a4ec;
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}

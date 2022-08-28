@@ -1,0 +1,175 @@
+.loginContianer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  .loginButton {
+    margin: 0.5rem 0 0 0;
+    padding: 0.65rem 2rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background: #36a4ec;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.015);
+    }
+    &:active {
+      transform: scale(0.97);
+      transition: transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235);
+    }
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.profileContiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: solid thin rgba(0, 0, 0, 0.226);
+  img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    object-fit: cover;
+  }
+}
+
+.metaData {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-grow: 0;
+  align-self: stretch;
+  text-align: left;
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.userhandle {
+  font-size: 0.75rem;
+  color: rgb(143, 166, 178);
+  margin-top: 0.125rem;
+}
+
+.actions {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.gif {
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+h2 {
+  text-align: center;
+}
+.lowKey {
+  text-align: center;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: 120px 120px;
+  gap: 12px 10px;
+  padding: 0px 14px 14px;
+  .techContainer {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    border-radius: 6px;
+    height: 120px;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.253);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.267);
+      box-shadow: rgb(0 0 0 / 31%) 0px 0px 4px 0px;
+    }
+    :first-child {
+      display: flex;
+      border-radius: 4px;
+      height: 70px;
+      width: 70px;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+    }
+    :last-child {
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+  }
+}
+
+.protectedButton {
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  background: #36a4ec;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+
+    transform: scale(1.015);
+  }
+  &:active {
+    transform: scale(0.97);
+    transition: transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235);
+  }
+}
